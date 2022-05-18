@@ -24,12 +24,12 @@ body {
     padding: 10px;
 }
 #mario {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 40px;
     background-image: url(/img/mario.png);
-    background-size: 50px 50px;
+    background-size: 40px 60px;
     position: relative;
-    top: 145px;
+    top: 140px;
 }
 #cub {
     height: 40px;
@@ -37,7 +37,7 @@ body {
     background-image: url(/img/cub.png);
     background-size: 40px 40px;
     position: relative;
-    top: 112px;
+    top: 105px;
     left: 565px;
     animation: cubMov 1s infinite linear;
 }
@@ -52,23 +52,23 @@ body {
 }
 
 .jump {
-    animation: jump 1s linear;
+    animation: jump .3s linear;
 }
 
 @keyframes jump {
     0% {
-        top: 145px;
+        top: 150px;
     }
     30% {
-        top: 125px;
+        top: 130px;
     }
     50% {
-        top: 80px;
+        top: 50px;
     }
     80% {
-        top: 125px;
+        top: 130px;
     }
     100% {
-        top: 145px;
+        top: 150px;
     }
 }
