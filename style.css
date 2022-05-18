@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+    background: #2222;
+    font-family: 'Press Start 2P', cursive;
+}
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+}
+.text {
+    min-width: 500px;
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    padding: 10px;
+}
+#mario {
+    height: 50px;
+    width: 50px;
+    background-image: url(/img/mario.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 145px;
+}
+#cub {
+    height: 40px;
+    width: 40px;
+    background-image: url(/img/cub.png);
+    background-size: 40px 40px;
+    position: relative;
+    top: 112px;
+    left: 565px;
+    animation: cubMov 1s infinite linear;
+}
+
+@keyframes cubMov {
+    0% {
+        left: 565px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 1s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 145px;
+    }
+    30% {
+        top: 125px;
+    }
+    50% {
+        top: 80px;
+    }
+    80% {
+        top: 125px;
+    }
+    100% {
+        top: 145px;
+    }
+}
